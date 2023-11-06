@@ -32,7 +32,7 @@ gulp.task("build-js", () => {
                               useBuiltIns: "usage",  
                               targets: "defaults" 
                             }],
-                            "@babel-react"
+                            "@babel/react"
                           ]
                         }
                       }

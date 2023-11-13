@@ -49,3 +49,13 @@ gulp.task("build-sass", () => {
               .pipe(sass().on('error', sass.logError))
               .pipe(gulp.dest(dist))
 })
+
+gulp.task("copy-api", () => {
+  return gulp.src("./app/api/**/*.*")
+              .pipe(gulp.dest(dist + "/api"))
+})
+
+gulp.task("copy-assets", () => {
+  return gulp.src("./app/assets/**/*.*")
+              .pipe(gulp.dest(dist + "/assets"))
+})
